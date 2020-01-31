@@ -1,0 +1,13 @@
+## list of basic commands using haskell ghci in manjaro
+
+### install
+
+pacman -S 
+
+### use REPL 
+
+stack ghci 
+
+### close REPL
+
+:q
