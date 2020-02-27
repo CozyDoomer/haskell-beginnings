@@ -2,7 +2,7 @@
 
 ### install
 
-pacman -S 
+pacman -S stack
 
 ### use REPL 
 
