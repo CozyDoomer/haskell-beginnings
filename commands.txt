@@ -11,3 +11,7 @@ stack ghci
 ### close REPL
 
 :q
+
+### install haskell package
+
+stack install <package>
