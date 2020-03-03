@@ -16,14 +16,14 @@ divisor_seq n = reverse $ divisor_seq_rec n []
 
 -- HUnit Tests: 'runTestTT tests' to use them
 
-equal_test :: Int -> [Int] -> Test
-equal_test arg result = TestCase (assertEqual ("divisor_seq " ++ show arg) result (divisor_seq arg))
+test_divisor_seq :: Int -> [Int] -> Test
+test_divisor_seq arg result = TestCase (assertEqual ("divisor_seq " ++ show arg) result (divisor_seq arg))
 
-tests = TestList [equal_test     3 [3,1],
-                  equal_test     4 [4,3,1],
-                  equal_test     6 [6],
-                  equal_test    10 [10,8,7,1],
-                  equal_test    12 [12,16,15,9,4,3,1],
-                  equal_test   220 [220,284],
-                  equal_test   284 [284,220],
-                  equal_test 12496 [12496,14288,15472,14536,14264]]
+tests = TestList [test_divisor_seq     3 [3,1],
+                  test_divisor_seq     4 [4,3,1],
+                  test_divisor_seq     6 [6],
+                  test_divisor_seq    10 [10,8,7,1],
+                  test_divisor_seq    12 [12,16,15,9,4,3,1],
+                  test_divisor_seq   220 [220,284],
+                  test_divisor_seq   284 [284,220],
+                  test_divisor_seq 12496 [12496,14288,15472,14536,14264]]
